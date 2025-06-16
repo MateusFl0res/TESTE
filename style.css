@@ -1,0 +1,151 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+body {
+background-color: #f9f9f9;
+}
+
+header {
+position: fixed;
+top: 0;
+width: 100%;
+height: 56px;
+background-color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 16px;
+box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+z-index: 1000;
+}
+
+.left, .right-icons {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.logo2 {
+height: 70px;
+width: 100px;
+}
+
+.barrapesquisa {
+display: flex;
+flex: 1;
+max-width: 600px;
+margin: 0 16px;
+}
+
+.barrapesquisa input {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-right: none;
+border-radius: 2px 0 0 2px;
+}
+
+.barrapesquisa button {
+padding: 8px 12px;
+background-color: #f1f1f1;
+border: 1px solid #ccc;
+border-left: none;
+border-radius: 0 2px 2px 0;
+cursor: pointer;
+}
+
+.layout {
+display: flex;
+margin-top: 56px; /* altura do header */
+}
+
+/* Sidebar */
+.sidebar {
+width: 220px;
+background-color: white;
+padding: 16px;
+border-right: 1px solid #ddd;
+height: calc(100vh - 56px);
+position: absolute;
+top: 56px;
+left: 0;
+}
+
+.sidebar ul {
+list-style: none;
+}
+
+.sidebar li {
+padding: 12px 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 10px;
+color: #333;
+}
+
+.sidebar hr {
+margin: 12px 0;
+}
+
+/* Conteúdo principal */
+main {
+margin-left: 220px;
+padding: 16px;
+flex: 1;
+}
+
+/* Filtros */
+.filtros {
+display: flex;
+gap: 12px;
+margin-bottom: 20px;
+overflow-x: auto;
+}
+
+.filtros button {
+padding: 6px 12px;
+background-color: #f1f1f1;
+border: none;
+border-radius: 16px;
+cursor: pointer;
+}
+
+.filtros .active {
+background-color: black;
+color: white;
+}
+
+/* Grade de vídeos */
+.video-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.video-card {
+background-color: white;
+border-radius: 8px;
+overflow: hidden;
+padding-bottom: 10px;
+}
+
+.video-card img {
+width: 100%;
+border-bottom: 1px solid #ddd;
+}
+
+.video-card h3 {
+font-size: 16px;
+margin: 8px;
+}
+
+.video-card p {
+font-size: 14px;
+color: #555;
+margin: 4px 8px;
+}
