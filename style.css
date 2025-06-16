@@ -60,10 +60,10 @@ cursor: pointer;
 
 .layout {
 display: flex;
-margin-top: 56px; /* altura do header */
+margin-top: 56px; 
 }
 
-/* Sidebar */
+
 .sidebar {
 width: 220px;
 background-color: white;
@@ -92,14 +92,14 @@ color: #333;
 margin: 12px 0;
 }
 
-/* Conteúdo principal */
+
 main {
 margin-left: 220px;
 padding: 16px;
 flex: 1;
 }
 
-/* Filtros */
+
 .filtros {
 display: flex;
 gap: 12px;
@@ -120,7 +120,7 @@ background-color: black;
 color: white;
 }
 
-/* Grade de vídeos */
+
 .video-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -134,9 +134,10 @@ overflow: hidden;
 padding-bottom: 10px;
 }
 
-.video-card img {
+.video-card video {
 width: 100%;
 border-bottom: 1px solid #ddd;
+display: block;
 }
 
 .video-card h3 {
